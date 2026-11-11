@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the structure of an HTML document, elements, attributes, and nesting.">
+  <title>HTML Foundations | HTML Field Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>HTML Field Notes<small>Web Programming I</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="welcome.html" aria-current="page">Foundations</a>
+        <a href="cafe.html">Text &amp; meaning</a>
+        <a href="media.html">Images &amp; links</a>
+        <a href="table1.html">Tables</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">CLASS 1 · THE FIRST WEB PAGE</p>
+      <h1>Start with a sound structure.</h1>
+      <p>HTML is the language that labels the parts of a web page. It tells the browser what the content is—not how it should look.</p>
+    </section>
+    <div class="page-content container content-grid">
+      <div>
+        <section class="content-card" aria-labelledby="skeleton-heading">
+          <h2 id="skeleton-heading">The document skeleton</h2>
+          <p>Every page starts with a doctype, a root <code>html</code> element, page information in <code>head</code>, and visible content in <code>body</code>.</p>
+          <pre class="snippet"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <ul class="check-list">
+            <li><code>&lt;!DOCTYPE html&gt;</code> declares an HTML5 document.</li>
+            <li><code>head</code> holds page information; <code>title</code> names the browser tab.</li>
+            <li><code>body</code> holds the content visitors see.</li>
+            <li>UTF-8 supports characters in many languages, including Amharic.</li>
+          </ul>
+        </section>
+        <section class="content-card" aria-labelledby="elements-heading">
+          <h2 id="elements-heading">Elements, tags, and attributes</h2>
+          <p>An element usually has a start tag, content, and an end tag. Attributes add information in the start tag.</p>
+          <pre class="snippet"><code>&lt;p class="intro"&gt;Hello, &lt;strong&gt;web&lt;/strong&gt;!&lt;/p&gt;
+&lt;!-- A note in the source; it is not shown on the page. --&gt;
+&lt;img src="images/campus-art.svg" alt="Illustrated campus"&gt;</code></pre>
+          <p>Elements must be nested in the right order: close the most recently opened element first. Images, line breaks, and metadata are void elements, so they do not have closing tags.</p>
+        </section>
+        <section class="content-card" id="check-your-work" aria-labelledby="check-heading">
+          <h2 id="check-heading">Check your work</h2>
+          <ol class="check-list">
+            <li>Save the file with an <code>.html</code> extension and open it in a browser.</li>
+            <li>Use browser DevTools to inspect the element tree.</li>
+            <li>Validate the page at <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">validator.w3.org</a> and fix reported errors.</li>
+          </ol>
+        </section>
+      </div>
+      <aside class="side-note">
+        <p class="eyebrow">REMEMBER</p>
+        <h2>HTML gives content its structure.</h2>
+        <p>CSS controls presentation and JavaScript adds behavior. They are separate technologies with different jobs.</p>
+        <p><a href="cafe.html">Next: make text meaningful →</a></p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><p><strong>HTML Field Notes</strong><br>Web Programming I · Chapter 2</p><p><a href="index.html">Back to the course guide</a></p></div></footer>
+</body>
+</html>

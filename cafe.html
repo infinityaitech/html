@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="See HTML text, formatting, quotations, abbreviations, and entities in context.">
+  <title>Text and Meaning | HTML Field Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>HTML Field Notes<small>Web Programming I</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="welcome.html">Foundations</a>
+        <a href="cafe.html" aria-current="page">Text &amp; meaning</a>
+        <a href="media.html">Images &amp; links</a>
+        <a href="table1.html">Tables</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">CLASS 2 · TEXT THAT MEANS SOMETHING</p>
+      <h1>Choose words—and the right elements.</h1>
+      <p>Headings, paragraphs, and text elements help readers understand what matters, what is quoted, and how parts of a page relate.</p>
+    </section>
+    <div class="page-content container content-grid">
+      <div>
+        <section class="content-card" aria-labelledby="cafe-heading">
+          <p class="eyebrow">A SMALL BUSINESS EXAMPLE</p>
+          <h2 id="cafe-heading">Abebe's Café</h2>
+          <p>The best <strong>macchiato</strong> in Piassa, served with care since 1998.</p>
+          <p>Open daily<br>7:00–21:00</p>
+          <hr>
+          <p><small>&copy; 2026 Abebe's Café &amp; Bakery</small></p>
+          <p>This page uses paragraphs for related text and a line break for the address-like opening hours. The horizontal rule marks a change of topic.</p>
+        </section>
+        <section class="content-card" aria-labelledby="formatting-heading">
+          <h2 id="formatting-heading">Formatting carries meaning</h2>
+          <p>Water is H<sub>2</sub>O. The area of a circle is &pi;r<sup>2</sup>.</p>
+          <p>Regular price: <del>500 Birr</del>; today's price: <ins>350 Birr</ins>.</p>
+          <p><strong>Important:</strong> the exam is <em>tomorrow</em>.</p>
+          <p><mark>Highlighted text</mark> draws attention to a phrase in context.</p>
+          <p><b>Bold</b> and <i>italic</i> describe appearance or an alternate voice; <strong>strong</strong> and <em>emphasis</em> communicate importance or stress.</p>
+        </section>
+        <section class="content-card" aria-labelledby="quotes-heading">
+          <h2 id="quotes-heading">Quotes, abbreviations, and titles</h2>
+          <p><abbr title="World Health Organization">WHO</abbr> is an abbreviation. A short inline quotation uses the q element: its goal is <q>health for all</q>.</p>
+          <blockquote>
+            <p>Education is the most powerful weapon which you can use to change the world.</p>
+          </blockquote>
+          <p><cite>Long Walk to Freedom</cite> is a book title. Use <code>cite</code> for the title of a creative work, not the author's name.</p>
+          <address>Questions about this lesson? <a href="mailto:news@example.edu">Write to the course desk</a>.</address>
+        </section>
+        <section class="content-card" aria-labelledby="entities-heading">
+          <h2 id="entities-heading">Reserved characters and entities</h2>
+          <p>To show markup as text, write <code>&amp;lt;</code> for &lt; and <code>&amp;gt;</code> for &gt;. Use <code>&amp;amp;</code> when you need an ampersand, and <code>&amp;copy;</code> for &copy;.</p>
+          <p>UTF-8 lets you write many characters directly, including € and ሰላም.</p>
+          <p><a href="campus.html">See these elements in a campus news story →</a></p>
+        </section>
+      </div>
+      <aside class="side-note">
+        <p class="eyebrow">TEXT CHECK</p>
+        <h2>One page, one clear outline.</h2>
+        <p>Use one main heading, then organize sections with headings in order. Choose each element for what the content means, not just how it looks.</p>
+        <p><a href="media.html">Next: add images and links →</a></p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><p><strong>HTML Field Notes</strong><br>Web Programming I · Chapter 2</p><p><a href="index.html">Back to the course guide</a></p></div></footer>
+</body>
+</html>

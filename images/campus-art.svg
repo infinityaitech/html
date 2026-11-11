@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title description">
+  <title id="title">Campus in the morning</title>
+  <desc id="description">A simple illustration of a campus building with trees and a rising sun.</desc>
+  <rect width="900" height="520" rx="24" fill="#e7eee6"/>
+  <circle cx="727" cy="118" r="52" fill="#e9a365"/>
+  <path d="M0 365c148-53 258-49 400-6 153 46 294 42 500-22v183H0z" fill="#b9ceb5"/>
+  <path d="M0 423c186-47 340-26 473 11 133 36 281 33 427-13v99H0z" fill="#739b76"/>
+  <path d="M191 198h416v221H191z" fill="#fffdf5"/>
+  <path d="m161 207 238-105 239 105v28H161z" fill="#315f50"/>
+  <path d="M223 235h352v184H223z" fill="#f3e6cf"/>
+  <path d="M270 263h86v88h-86zM425 263h86v88h-86z" fill="#7fa8a1"/>
+  <path d="M270 367h86v52h-86zM425 367h86v52h-86z" fill="#7fa8a1"/>
+  <path d="M368 334h62v85h-62z" fill="#d78a56"/>
+  <path d="M371 334h56v-46h-56z" fill="#f2d5a5"/>
+  <path d="M115 341h38v96h-38z" fill="#8a6549"/>
+  <circle cx="134" cy="318" r="56" fill="#598368"/>
+  <path d="M646 341h38v96h-38z" fill="#8a6549"/>
+  <circle cx="665" cy="316" r="59" fill="#598368"/>
+  <path d="M0 451h900" stroke="#f8f2df" stroke-width="8" opacity=".8"/>
+</svg>

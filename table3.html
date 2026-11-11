@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A weekly class timetable demonstrating HTML table row and column spans.">
+  <title>Weekly Timetable | HTML Field Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>HTML Field Notes<small>Web Programming I</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="welcome.html">Foundations</a>
+        <a href="cafe.html">Text &amp; meaning</a>
+        <a href="media.html">Images &amp; links</a>
+        <a href="table1.html" aria-current="location">Tables</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">TABLES · COLSPAN &amp; ROWSPAN</p>
+      <h1>A week, laid out clearly.</h1>
+      <p>This timetable uses a row span for a class that continues across two time slots and a column span for the shared lunch break.</p>
+    </section>
+    <div class="page-content container content-grid">
+      <div>
+        <section class="content-card" aria-labelledby="timetable-heading">
+          <h2 id="timetable-heading">My timetable, Semester I</h2>
+          <div class="table-scroll">
+            <table>
+              <caption>Weekly class timetable</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Time</th><th scope="col">Mon</th><th scope="col">Tue</th>
+                  <th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th><th scope="col">Sat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2:30–4:30</th><td></td><td>Web Programming I</td>
+                  <td>Operating System</td><td>Java Programming</td><td></td>
+                  <td rowspan="2">Automata and Complexity Theory</td>
+                </tr>
+                <tr>
+                  <th scope="row">4:30–6:30</th><td></td><td>Operating System</td>
+                  <td>Software Engineering</td><td>Web Programming I</td><td></td>
+                </tr>
+                <tr>
+                  <th scope="row">6:30–7:30</th><td colspan="6">Lunch break</td>
+                </tr>
+                <tr>
+                  <th scope="row">7:30–9:30</th><td></td><td>Microprocessor and Assembly Language</td>
+                  <td>Data Structures and Algorithms</td><td>Data Structures and Algorithms</td>
+                  <td>Java Programming</td><td></td>
+                </tr>
+                <tr>
+                  <th scope="row">9:30–11:30</th><td></td><td></td><td></td><td></td>
+                  <td>Microprocessor and Assembly Language</td><td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr><th scope="row">Total</th><td colspan="6">7 courses · 21 credit hours</td></tr>
+              </tfoot>
+            </table>
+          </div>
+          <p>The Saturday class occupies both morning rows. Lunch occupies all six weekday columns, so each span matches the table's seven-column structure.</p>
+        </section>
+        <section class="content-card">
+          <h2>More table practice</h2>
+          <div class="table-links"><a href="table2.html">Exam results with rowspan</a><a href="table1.html">Back to the table overview</a></div>
+        </section>
+      </div>
+      <aside class="side-note">
+        <p class="eyebrow">TABLE GRID</p>
+        <h2>One time slot, one row.</h2>
+        <p>For empty schedule cells, leave the cell empty rather than removing it; the row still needs to line up with the day headings.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><p><strong>HTML Field Notes</strong><br>Web Programming I · Chapter 2</p><p><a href="table1.html">Back to table examples</a></p></div></footer>
+</body>
+</html>

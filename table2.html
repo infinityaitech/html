@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An HTML table example using row spans and a calculated class average.">
+  <title>Exam Results Table | HTML Field Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>HTML Field Notes<small>Web Programming I</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="welcome.html">Foundations</a>
+        <a href="cafe.html">Text &amp; meaning</a>
+        <a href="media.html">Images &amp; links</a>
+        <a href="table1.html" aria-current="location">Tables</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">TABLES · ROWSPAN</p>
+      <h1>Let one cell cover related rows.</h1>
+      <p>The student name appears once for two subject scores. The average row uses a column span to label the result.</p>
+    </section>
+    <div class="page-content container content-grid">
+      <div>
+        <section class="content-card" aria-labelledby="results-heading">
+          <h2 id="results-heading">Semester I exam results</h2>
+          <div class="table-scroll">
+            <table>
+              <caption>Exam Results, Semester I</caption>
+              <thead>
+                <tr><th scope="col">Student</th><th scope="col">Subject</th><th scope="col">Score</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row" rowspan="2">Hana</th><td>Math</td><td>85</td></tr>
+                <tr><td>Web</td><td>90</td></tr>
+              </tbody>
+              <tbody>
+                <tr><th scope="row" rowspan="2">Dawit</th><td>Math</td><td>90</td></tr>
+                <tr><td>Web</td><td>80</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><th scope="row" colspan="2">Average</th><td>86.25</td></tr>
+              </tfoot>
+            </table>
+          </div>
+          <p><code>rowspan="2"</code> makes each student's name cell span two rows. The average is 86.25 across the four scores.</p>
+        </section>
+        <section class="content-card">
+          <h2>Try another table</h2>
+          <p>See how column spans help make a weekly timetable easier to scan.</p>
+          <div class="table-links"><a href="table3.html">Open the weekly timetable</a><a href="table1.html">Back to the table overview</a></div>
+        </section>
+      </div>
+      <aside class="side-note">
+        <p class="eyebrow">MERGED CELLS</p>
+        <h2>Count occupied columns.</h2>
+        <p>When using <code>rowspan</code> or <code>colspan</code>, remember that one cell occupies multiple positions in the table grid.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><p><strong>HTML Field Notes</strong><br>Web Programming I · Chapter 2</p><p><a href="table1.html">Back to table examples</a></p></div></footer>
+</body>
+</html>

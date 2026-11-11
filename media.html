@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practice image alternatives, figures, media elements, and HTML links and paths.">
+  <title>Images and Links | HTML Field Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>HTML Field Notes<small>Web Programming I</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="welcome.html">Foundations</a>
+        <a href="cafe.html">Text &amp; meaning</a>
+        <a href="media.html" aria-current="page">Images &amp; links</a>
+        <a href="table1.html">Tables</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">CLASS 3 · IMAGES, MEDIA &amp; LINKS</p>
+      <h1>Connect pages. Describe images.</h1>
+      <p>A link points to another destination; an image is a separate file the browser loads. Good paths and useful alternatives make both work for more people.</p>
+    </section>
+    <div class="page-content container content-grid">
+      <div>
+        <section class="content-card" aria-labelledby="figure-heading">
+          <h2 id="figure-heading">An image with a caption</h2>
+          <figure class="feature-figure">
+            <img src="images/campus-art.svg" alt="Illustration of a green campus building beneath a bright sun">
+            <figcaption>A local image can be stored in an images folder and described with alt text.</figcaption>
+          </figure>
+          <pre class="snippet"><code>&lt;figure&gt;
+  &lt;img src="images/campus-art.svg"
+       alt="Illustration of a green campus building"&gt;
+  &lt;figcaption&gt;A campus in the morning.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+          <p>Write concise alt text that communicates the useful information in the image. For a purely decorative image, use <code>alt=""</code>.</p>
+        </section>
+        <section class="content-card" id="paths" aria-labelledby="paths-heading">
+          <h2 id="paths-heading">Choose the right path</h2>
+          <div class="table-scroll">
+            <table>
+              <caption>Common file paths</caption>
+              <thead><tr><th scope="col">From</th><th scope="col">To</th><th scope="col">Path</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">index.html</th><td>about.html in the same folder</td><td><code>about.html</code></td></tr>
+                <tr><th scope="row">index.html</th><td>logo.png inside images</td><td><code>images/logo.png</code></td></tr>
+                <tr><th scope="row">pages/contact.html</th><td>logo.png in the parent folder's images</td><td><code>../images/logo.png</code></td></tr>
+                <tr><th scope="row">Any page</th><td>A page on another website</td><td><code>https://example.com/</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>A relative path starts from the current file. An absolute URL gives the full web address.</p>
+        </section>
+        <section class="content-card" aria-labelledby="links-heading">
+          <h2 id="links-heading">Links have different destinations</h2>
+          <ul class="check-list">
+            <li>Another page: <a href="campus.html">read the campus story</a>.</li>
+            <li>A section on this page: <a href="#paths">jump to file paths</a>.</li>
+            <li>An email address: <a href="mailto:news@example.edu">email the campus desk</a>.</li>
+            <li>An external resource: <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">open the HTML validator</a>.</li>
+          </ul>
+          <p>Use link text that explains where the link goes. When opening a new tab with <code>target="_blank"</code>, add <code>rel="noopener noreferrer"</code>.</p>
+        </section>
+        <section class="content-card" aria-labelledby="media-heading">
+          <h2 id="media-heading">Video, audio, and embedded pages</h2>
+          <p>These elements can include controls and a fallback message. The filenames below are examples; add your own media files before using them.</p>
+          <pre class="snippet"><code>&lt;video controls width="640"&gt;
+  &lt;source src="media/intro.mp4" type="video/mp4"&gt;
+  Your browser does not support video.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+  &lt;source src="media/song.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Introduction to HTML"
+        width="560" height="315"&gt;&lt;/iframe&gt;</code></pre>
+          <p>Give every iframe a descriptive title. Some sites prevent their pages from being embedded.</p>
+        </section>
+      </div>
+      <aside class="side-note">
+        <p class="eyebrow">PATH CHECK</p>
+        <h2>Where is the file?</h2>
+        <p>Count folders from the HTML file you are editing. Use <code>../</code> to move up one folder, then name the next folder and file.</p>
+        <p><a href="table1.html">Next: organize data in tables →</a></p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><p><strong>HTML Field Notes</strong><br>Web Programming I · Chapter 2</p><p><a href="index.html">Back to the course guide</a></p></div></footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practice accessible HTML tables with captions, headers, and structured rows.">
+  <title>HTML Tables | HTML Field Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>HTML Field Notes<small>Web Programming I</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="welcome.html">Foundations</a>
+        <a href="cafe.html">Text &amp; meaning</a>
+        <a href="media.html">Images &amp; links</a>
+        <a href="table1.html" aria-current="page">Tables</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">TABLES · CLASS EXAMPLES</p>
+      <h1>Put related data in rows and columns.</h1>
+      <p>Use a table when the information is genuinely tabular. A caption and header cells help readers understand the relationships in the data.</p>
+    </section>
+    <div class="page-content container content-grid">
+      <div>
+        <section class="content-card" aria-labelledby="simple-table-heading">
+          <h2 id="simple-table-heading">A simple student table</h2>
+          <div class="table-scroll">
+            <table>
+              <caption>Students in the sample class</caption>
+              <thead>
+                <tr><th scope="col">Name</th><th scope="col">City</th><th scope="col">Age</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Hanna</th><td>Adama</td><td>21</td></tr>
+                <tr><th scope="row">Dani</th><td>Hawassa</td><td>23</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The <code>caption</code> names the table, <code>th</code> marks a header, and <code>td</code> holds a data cell. The <code>scope</code> attribute clarifies which cells each header describes.</p>
+        </section>
+        <section class="content-card" aria-labelledby="more-tables-heading">
+          <h2 id="more-tables-heading">Explore two more examples</h2>
+          <p>The next pages use <code>rowspan</code> and <code>colspan</code> to connect cells across multiple rows and columns.</p>
+          <div class="table-links">
+            <a href="table2.html">Exam results · merged rows</a>
+            <a href="table3.html">Weekly timetable · merged columns</a>
+          </div>
+        </section>
+      </div>
+      <aside class="side-note">
+        <p class="eyebrow">TABLE TIP</p>
+        <h2>Keep the structure simple.</h2>
+        <p>Use tables for data, not for page layout. Add a caption and meaningful row and column headers.</p>
+        <p><a href="index.html">Return to the course guide →</a></p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><p><strong>HTML Field Notes</strong><br>Web Programming I · Chapter 2</p><p><a href="index.html">Back to the course guide</a></p></div></footer>
+</body>
+</html>

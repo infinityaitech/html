@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Club Registration Form</title>
+</head>
+
+<body>
+
+    <h1>A Club Registration Form</h1>
+
+    <form>
+
+       
+        <label>Full Name:</label>
+        <input type="text" name="Fullname" required placeholder="Enter your full name"> <br>
+        <label>Email:</label>
+        <input type="email" name="email" required placeholder="Enter your email address"> <br>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number"> <br>
+
+  
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="Male" >
+        Male
+
+        <input type="radio" name="gender" value="Female"> Female
+        <br>
+
+        <label>Year of Study:</label>
+
+        <input type="radio" name="year" value="First">
+        First Year
+
+        <input type="radio" name="year" value="Second">
+        Second Year
+
+        <input type="radio" name="year" value="Third">
+        Third Year
+
+        <input type="radio" name="year" value="Fourth">
+        Fourth Year
+
+          <br>
+       
+        <label>Department:</label>
+
+        <select id="Department" name="department">
+            <option value="">Select Department</option>
+            <option>Computer Science</option>
+            <option>Business Adminstration</option>
+        </select> <br>
+
+       
+        <label>Interests:</label>
+
+        <input type="checkbox" name="interests" value="Coding">
+        Coding
+
+        <input type="checkbox" name="interests" value="Design">
+        Design
+
+        <input type="checkbox" name="interests" value="Networking">
+        Networking
+        <br>
+        <label>Why Join?</label>
+
+        <br>
+
+        <textarea name="reason" rows="1" cols="40"></textarea>
+
+        <br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
