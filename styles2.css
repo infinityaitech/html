@@ -1,0 +1,17 @@
+.lorem{
+  color:navy;
+  text-decoration:underline;
+  font-size: 16px;
+  font-family:'Times New Roman', Times, serif;
+}
+/* before and after */
+p::first-letter{
+  font-size:14px;
+  color:red;
+}
+.lorem:hover{
+  color:#d30eab;
+}
+.lorem:active{
+  color:#60607b;
+}
